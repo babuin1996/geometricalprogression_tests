@@ -24,7 +24,7 @@ class GeometricalProgressionTest extends TestCase
         $progression = [1,3,2,6,11];
         $obj = new GeometricalProgression($progression);
         $obj->check();
-        $this->assertTrue($obj->isGeometricalProgression);
+        $this->assertTrue(!$obj->isGeometricalProgression);
     }
 
     public function testCheckRatio(){

@@ -28,9 +28,11 @@ class GeometricalProgression
             if (($this->array[$i]/($this->array[$i-1])) != $this->ratio)
             {
                 $this->isGeometricalProgression = false;
+            } else {
+                $this->isGeometricalProgression = true;
             }
         }
-        $this->isGeometricalProgression = true;
+
 
         if($output === true){
             return ("This is a geometrical progression with ratio = $this->ratio");
